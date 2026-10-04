@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wild Forest — Survive the Unknown</title>
+    <meta name="description" content="Wild Forest — an open-world survival adventure. Explore the mist, craft, fight, and uncover the secrets hidden deep in the wild." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <!-- NAV -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#" class="nav__logo">
+          <span class="nav__logo-icon">🌲</span>
+          <span class="nav__logo-text">Wild<span>Forest</span></span>
+        </a>
+        <nav class="nav__links">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#screenshots">Gallery</a>
+          <a href="#download" class="nav__cta">Download</a>
+        </nav>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <img src="https://images.pexels.com/photos/37265747/pexels-photo-37265747.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Dark misty forest" class="hero__img" />
+        <div class="hero__overlay"></div>
+        <div class="hero__grain"></div>
+      </div>
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Now in Early Access
+        </div>
+        <h1 class="hero__title">
+          WILD<br><span class="hero__title-outline">FOREST</span>
+        </h1>
+        <p class="hero__subtitle">
+          Stranded. Hunted. Alone. Survive the depths of an ancient forest where every shadow hides a threat — and every dawn is a victory.
+        </p>
+        <div class="hero__actions">
+          <a href="WildForest.zip" download class="btn btn--primary btn--lg" id="downloadBtn">
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+            Download Game
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.5v-7l6 3.5-6 3.5z"/></svg>
+            Watch on YouTube
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-num">4.9★</span>
+            <span class="hero__stat-label">Rating</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">28+</span>
+            <span class="hero__stat-label">Survivors</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">∞</span>
+            <span class="hero__stat-label">Procedural World</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll to explore</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__text">
+            <span class="section__label">The Story</span>
+            <h2 class="section__title">A forest that doesn't want you here.</h2>
+            <p>
+              You wake up in the remnants of a crashed bush plane, surrounded by towering pines and an unnatural fog that creeps between the trunks. Your supplies are scattered. Your radio is dead. And something — several somethings — is moving in the trees.
+            </p>
+            <p>
+              <strong>Wild Forest</strong> is a single-player survival sandbox where the wilderness is both your provider and your enemy. Chop wood, build shelter, craft weapons, hunt for food, and explore a massive procedurally generated forest that changes with every new game.
+            </p>
+            <ul class="about__list">
+              <li><span class="about__check">✓</span> No hand-holding. No minimap. Just instinct.</li>
+              <li><span class="about__check">✓</span> Day-night cycle with dynamic weather and seasons.</li>
+              <li><span class="about__check">✓</span> Build everything from a lean-to to a fortified cabin.</li>
+            </ul>
+          </div>
+          <div class="about__visual">
+            <img src="https://images.pexels.com/photos/1287083/pexels-photo-1287083.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Misty evergreen forest" loading="lazy" />
+            <div class="about__visual-tag">
+              <span class="about__visual-dot"></span>
+              Deep Forest Biome
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Game Features</span>
+          <h2 class="section__title">Built for survivors, not tourists.</h2>
+        </div>
+        <div class="features__grid">
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L3 7v10l9 5 9-5V7l-9-5z"/><path d="M12 12v10M3 7l9 5 9-5"/></svg>
+            </div>
+            <h3>Infinite Procedural World</h3>
+            <p>Every playthrough generates a unique forest — new rivers, caves, ruins, and creature dens. No two runs are ever the same.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.5 2.5l7 7-3 3-7-7 3-3z"/><path d="M8.5 8.5l-6 6 3 3 6-6"/><path d="M11 11l8 8"/></svg>
+            </div>
+            <h3>Deep Crafting System</h3>
+            <p>Over 200 craftable items — from stone axes to compound bows to camouflaged traps. Tier up your tools as you push deeper into the wild.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/><circle cx="12" cy="11" r="1.5"/></svg>
+            </div>
+            <h3>Build & Fortify</h3>
+            <p>Construct shelters piece by piece. Reinforce walls, set alarms, light fires — the creatures hunt at night, and your base is the only safe haven.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a7 7 0 00-7 7c0 3 2 5 2 8h10c0-3 2-5 2-8a7 7 0 00-7-7z"/><path d="M9 21h6M10 17v4M14 17v4"/></svg>
+            </div>
+            <h3>Dynamic Survival Needs</h3>
+            <p>Hunger, thirst, warmth, stamina, and sanity — five interlocking systems that make every decision matter. Eat the wrong berry and the forest gets a new ghost.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3>Living Ecosystem</h3>
+            <p>Deer graze, wolves pack-hunt, fish swim downstream. Every animal has its own AI behaviour — observe and exploit the food chain, or become part of it.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 21 8 13.8 2 9.4h7.6L12 2z"/></svg>
+            </div>
+            <h3>Hidden Lore</h3>
+            <p>Caves, abandoned camps, and ancient shrines hide fragments of a story the forest has buried. Piece it together to unlock the true ending.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENSHOTS / GALLERY -->
+    <section class="gallery" id="screenshots">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Gallery</span>
+          <h2 class="section__title">Step inside the wild.</h2>
+        </div>
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--wide">
+            <img src="https://images.pexels.com/photos/6227194/pexels-photo-6227194.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mysterious misty forest" loading="lazy" />
+            <figcaption>Dawn breaks over the Pine Hollow</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://images.pexels.com/photos/28428266/pexels-photo-28428266.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sunlit forest path" loading="lazy" />
+            <figcaption>The old hunting trail</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://images.pexels.com/photos/27131979/pexels-photo-27131979.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mist-covered hillside forest" loading="lazy" />
+            <figcaption>Fog rolling in — night approaches</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--wide">
+            <img src="https://images.pexels.com/photos/39433535/pexels-photo-39433535.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mountain forest with sunbeams" loading="lazy" />
+            <figcaption>The Ridge — the forest's highest peak</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD CTA -->
+    <section class="download" id="download">
+      <div class="download__bg">
+        <img src="https://images.pexels.com/photos/11555874/pexels-photo-11555874.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Foggy evergreen forest" />
+        <div class="download__overlay"></div>
+      </div>
+      <div class="container download__content">
+        <span class="section__label section__label--light">Get the Game</span>
+        <h2 class="download__title">Your forest is waiting.</h2>
+        <p class="download__desc">
+          Download Wild Forest now — free during Early Access. No account, no DRM, no microtransactions. Just you and the wild.
+        </p>
+        <a href="WildForest.zip" download class="btn btn--primary btn--xl" id="downloadBtnMain">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+          Download WildForest.zip
+        </a>
+        <div class="download__meta">
+          <span>📦 ~80.23 MB</span>
+          <span>🖥️ Windows>
+          <span>🎮 Single-player</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">🌲 Wild<span>Forest</span></span>
+          <p>A survival adventure by an independent developer. Built with passion for the wild.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Game</h4>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#screenshots">Gallery</a>
+            <a href="#download">Download</a>
+          </div>
+          <div class="footer__col">
+            <h4>Community</h4>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube Channel</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener">Devlogs</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener">Trailers</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="container">
+          <p>© 2026 Wild Forest. All rights reserved. Made for those who hear the call of the wild.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCROLL INDICATOR -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
